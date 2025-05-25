@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Profesional - Convergencia Tecnológica</title>
+  
+  <title>AgroRaíz</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
   <style>
     :root {
       --bg-color: #121212;
@@ -37,6 +40,32 @@
     /* Responsive nav */
     .menu-toggle { display: none; flex-direction: column; cursor: pointer; }
     .menu-toggle span { height: 3px; width: 25px; background: var(--text-light); margin-bottom: 5px; border-radius: 2px; transition: transform 0.3s; }
+    .servicio-titulo {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 0.5rem;
+  border-left: 4px solid var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.servicio-titulo:hover {
+  transform: translateX(6px);
+}
+
+.servicio-descripcion {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  /* background: rgba(255, 255, 255, 0.03);
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 6px; */
+}
+
+    
     @media (max-width: 768px) {
       .menu-toggle { display: flex; }
       .nav-links { position: fixed; top: 0; right: -100%; height: 100vh; width: 70%; background: var(--surface-color); flex-direction: column; align-items: center; justify-content: center; gap: 2rem; transition: right 0.3s; }
@@ -49,8 +78,8 @@
 <body>
   <header>
     <div class="logo">
-      <span class="lang-es">Blog Pro</span>
-      <span class="lang-en" style="display:none;">Pro Blog</span>
+      <span class="lang-es">AgroRaíz</span>
+      <span class="lang-en" style="display:none;">AgroRaíz</span>
     </div>
     <nav>
       <div class="menu-toggle" onclick="toggleMenu()">
@@ -74,11 +103,24 @@
   </header>
 
   <main>
-    <section id="inicio">
-      <h2><span class="lang-es">Inicio</span><span class="lang-en" style="display:none;">Home</span></h2>
-      <p class="lang-es">¡Bienvenidos a nuestro blog! Somos un equipo apasionado por la convergencia tecnológica y ofrecemos soluciones prácticas en informática.</p>
-      <p class="lang-en" style="display:none;">Welcome to our blog! We are a team passionate about technological convergence, offering practical IT solutions.</p>
-    </section>
+    
+
+<section id="inicio">
+  <h2><span class="lang-es">Bienvenidos a AgroRaíz</span><span class="lang-en" style="display:none;">Welcome to AgroRaíz</span></h2>
+  <img src="inicio.jpeg" alt="Campo colombiano" class="responsive" style="margin: 1rem 0;">
+  <p class="lang-es">
+    Bienvenidos a <strong>AgroRaíz</strong>, una iniciativa dedicada al fortalecimiento del campo colombiano. Nuestro propósito es brindar herramientas prácticas a pequeños productores rurales a través de la capacitación en procesos de industrialización, la promoción de la economía campesina y asociativa, y el acompañamiento para la participación activa en mercados locales. 
+    <br><br>
+    <em>Creemos en el poder transformador del trabajo colectivo y en el valor de las comunidades rurales como motor de desarrollo sostenible.</em>
+  </p>
+  <p class="lang-en" style="display:none;">
+    Welcome to <strong>AgroRaíz</strong>, an initiative dedicated to strengthening the Colombian countryside. Our goal is to provide practical tools to small rural producers through training in industrialization processes, promotion of peasant and cooperative economy, and support for active participation in local markets.
+    <br><br>
+    <em>We believe in the transformative power of collective work and the value of rural communities as engines of sustainable development.</em>
+  </p>
+</section>
+
+
 
     <section id="integrantes">
       <h2><span class="lang-es">Integrantes</span><span class="lang-en" style="display:none;">Team Members</span></h2>
@@ -94,43 +136,84 @@
           </thead>
           <tbody>
             <tr>
-              <td>Juan Pérez Gómez</td>
-              <td>Ingeniería de Sistemas / Systems Engineering</td>
-              <td>Fotografía & Senderismo / Photography & Hiking</td>
-              <td>1234567</td>
+              <td>Aquiles Yesid Carpintero Blanco</td>
+              <td>INFORMÁTICA Y CONVERGENCIA TECNOLÓGICA</td>
+              <td>Lectura y agricultura</td>
+              <td>51154</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section id="servicios">
-      <h2><span class="lang-es">Servicios</span><span class="lang-en" style="display:none;">Services</span></h2>
-      <article>
-        <h3>1. <span class="lang-es">Desarrollo Web</span><span class="lang-en" style="display:none;">Web Development</span></h3>
-        <p class="lang-es">Creamos sitios responsivos y modernos.</p>
-        <p class="lang-en" style="display:none;">We build responsive modern websites.</p>
-      </article>
-      <article>
-        <h3>2. <span class="lang-es">Consultoría TI</span><span class="lang-en" style="display:none;">IT Consulting</span></h3>
-        <p class="lang-es">Asesoría en arquitectura, nube y seguridad.</p>
-        <p class="lang-en" style="display:none;">Advising on architecture, cloud, and security.</p>
-      </article>
-      <article>
-        <h3>3. <span class="lang-es">Soporte Remoto</span><span class="lang-en" style="display:none;">Remote Support</span></h3>
-        <p class="lang-es">Resolución de incidencias 24/7.</p>
-        <p class="lang-en" style="display:none;">24/7 incident resolution.</p>
-      </article>
-    </section>
+    
 
-    <section id="video">
-      <h2><span class="lang-es">Video</span><span class="lang-en" style="display:none;">Video</span></h2>
-      <p><a href="#" style="color: var(--accent-color);">[Enlace a tu video]</a></p>
-    </section>
+<section id="servicios">
+  <h2><span class="lang-es">Servicios</span><span class="lang-en" style="display:none;">Services</span></h2>
+
+  <article>
+    <h3 class="servicio-titulo">
+      1. <span class="lang-es">Ventas en Mercados Campesinos</span>
+         <span class="lang-en" style="display:none;">Peasant Market Sales</span>
+    </h3>
+    <p class="servicio-descripcion lang-es">
+      Acompañamiento y asesoría para la comercialización de productos campesinos en ferias locales y regionales.
+    </p>
+    <p class="servicio-descripcion lang-en" style="display:none;">
+      Support and guidance for selling peasant products in local and regional markets.
+    </p>
+    <img src="imagen1.png" alt="Mercado campesino" class="responsive" style="margin-bottom: 1rem;">
+  </article>
+
+  <article>
+    <h3 class="servicio-titulo">
+      2. <span class="lang-es">Capacitación en Industrialización del Campo</span>
+         <span class="lang-en" style="display:none;">Field Industrialization Training</span>
+    </h3>
+    <p class="servicio-descripcion lang-es">
+      Formación práctica sobre transformación de productos agrícolas, conservación y empaques.
+    </p>
+    <p class="servicio-descripcion lang-en" style="display:none;">
+      Practical training on processing agricultural products, preservation and packaging.
+    </p>
+    <img src="2lo.jpg" alt="Industrialización rural" class="responsive" style="margin-bottom: 1rem;">
+  </article>
+
+  <article>
+    <h3 class="servicio-titulo">
+      3. <span class="lang-es">Economía Campesina y Asociativa</span>
+         <span class="lang-en" style="display:none;">Peasant and Associative Economy</span>
+    </h3>
+    <p class="servicio-descripcion lang-es">
+      Fortalecimiento de organizaciones rurales mediante economía solidaria y trabajo cooperativo.
+    </p>
+    <p class="servicio-descripcion lang-en" style="display:none;">
+      Strengthening rural organizations through solidarity economy and cooperative work.
+    </p>
+    <img src="3lo.jpg" alt="Trabajo asociativo rural" class="responsive" style="margin-bottom: 1rem;">
+  </article>
+</section>
+
+
+    
+
+   <section id="video">
+  <h2><span class="lang-es">Video</span><span class="lang-en" style="display:none;">Video</span></h2>
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+    <iframe src="https://www.youtube.com/embed/5zqNXCtVmoE?si=vhLiV-j7g4zUd2ck" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+    </iframe>
+  </div>
+</section>
+
 
     <section id="infografia">
       <h2><span class="lang-es">Infografía</span><span class="lang-en" style="display:none;">Infographic</span></h2>
-      <img src="Gemini_Generated_Image_wtfl9lwtfl9lwtfl.png" alt="Infografía: 3 Servicios de Blog Pro" class="responsive">
+      <img src="info.png" alt="Infografía: 3 Servicios de Blog Pro" class="responsive">
     </section>
   </main>
 
